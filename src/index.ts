@@ -1,8 +1,3 @@
-export class C {
-    private x = 10;
-    getX = () => this.x;
-    setX = (newVal: number) => { this.x = newVal; }
-}
+import 'dotenv/config';
 
-export let x = new C();
-export let y = { ...{ some: "value" } };
+console.log('It works!');

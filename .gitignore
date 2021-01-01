@@ -1,3 +1,4 @@
-lib
+.env
 dist
+lib
 node_modules
