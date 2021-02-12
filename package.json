@@ -2,13 +2,14 @@
   "name": "typescript-babel-starter",
   "author": "Daniele Rubetti",
   "description": "An example project with TypeScript and Babel",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": "github:drubetti/TypeScript-Babel-Starter",
   "scripts": {
     "build": "npm run build:types && npm run build:js",
     "build:js": "babel src --out-dir dist --extensions \".ts\" --source-maps inline",
     "build:types": "tsc --emitDeclarationOnly",
+    "postinstall": "husky install",
     "start": "babel-node -x \".ts\" src",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
@@ -23,7 +24,7 @@
     "@babel/preset-typescript": "^7.12.16",
     "@types/node": "^14.14.27",
     "babel-core": "^7.0.0-bridge.0",
-    "husky": "^4.3.8",
+    "husky": "^5.0.9",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
     "typescript": "^4.1.5"
@@ -31,10 +32,5 @@
   "dependencies": {
     "@babel/runtime": "^7.12.13",
     "dotenv": "^8.2.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }
