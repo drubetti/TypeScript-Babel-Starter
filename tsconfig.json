@@ -1,8 +1,12 @@
 {
   "extends": "@tsconfig/node18",
   "compilerOptions": {
+    "baseUrl": "./src",
+    "declaration": true,
+    "isolatedModules": true,
     "module": "nodenext",
     "moduleResolution": "node16",
+    "outDir": "./dist",
     "resolveJsonModule": true
   },
   "exclude": ["node_modules", "dist"]
