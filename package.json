@@ -19,23 +19,23 @@
     "type-check:watch": "npm run type-check -- --watch"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-import-assertions": "^7.24.1",
-    "@babel/cli": "^7.24.1",
-    "@babel/core": "^7.24.3",
-    "@babel/plugin-transform-class-properties": "^7.24.1",
-    "@babel/plugin-transform-runtime": "^7.24.3",
-    "@babel/preset-env": "^7.24.3",
-    "@babel/preset-typescript": "^7.24.1",
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/plugin-syntax-import-assertions": "^7.24.6",
+    "@babel/plugin-transform-class-properties": "^7.24.6",
+    "@babel/plugin-transform-runtime": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-typescript": "^7.24.6",
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.12",
     "babel-core": "^7.0.0-bridge.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.5",
     "prettier": "3.2.5",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.1",
+    "@babel/runtime": "^7.24.6",
     "dotenv": "^16.4.5",
     "source-map-support": "^0.5.21"
   }
