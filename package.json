@@ -15,24 +15,24 @@
     "type-check:watch": "npm run type-check -- --watch"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.6",
-    "@babel/core": "^7.24.6",
-    "@babel/node": "^7.24.6",
-    "@babel/plugin-transform-class-properties": "^7.24.6",
-    "@babel/plugin-transform-runtime": "^7.24.6",
-    "@babel/preset-env": "^7.24.6",
-    "@babel/preset-typescript": "^7.24.6",
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/plugin-transform-class-properties": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@tsconfig/recommended": "^1.0.6",
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.14.8",
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-source-map-support": "^2.2.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
-    "prettier": "3.2.5",
-    "typescript": "^5.4.5"
+    "lint-staged": "^15.2.7",
+    "prettier": "3.3.2",
+    "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.6",
+    "@babel/runtime": "^7.24.7",
     "dotenv": "^16.4.5",
     "source-map-support": "^0.5.21"
   }
