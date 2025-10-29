@@ -20,23 +20,23 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.3",
+    "@babel/core": "^7.28.5",
     "@babel/plugin-syntax-import-assertions": "^7.27.1",
     "@babel/plugin-transform-class-properties": "^7.27.1",
-    "@babel/plugin-transform-runtime": "^7.28.3",
-    "@babel/preset-env": "^7.28.3",
-    "@babel/preset-typescript": "^7.27.1",
+    "@babel/plugin-transform-runtime": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
     "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.18.0",
+    "@types/node": "^22.18.13",
     "babel-core": "^7.0.0-bridge.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.2.6",
     "prettier": "3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.28.3",
-    "dotenv": "^17.2.1",
+    "@babel/runtime": "^7.28.4",
+    "dotenv": "^17.2.3",
     "source-map-support": "^0.5.21"
   }
 }
