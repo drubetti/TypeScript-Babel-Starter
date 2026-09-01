@@ -7,36 +7,38 @@
   "repository": "github:drubetti/TypeScript-Babel-Starter",
   "type": "module",
   "engines": {
-    "node": "^14.13.1 || >=16.0.0"
+    "node": ">=24.11.0"
   },
   "scripts": {
     "build": "npm run build:types && npm run build:js",
     "build:js": "babel src --out-dir dist --extensions \".ts\"",
     "build:types": "tsc --emitDeclarationOnly",
     "prepare": "husky",
-    "start": "npm run build:js && node dist",
+    "start": "babel-node -x \".ts\" src",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
   "devDependencies": {
-    "@babel/cli": "^7.28.6",
-    "@babel/core": "^7.29.0",
-    "@babel/plugin-syntax-import-assertions": "^7.28.6",
-    "@babel/plugin-transform-class-properties": "^7.28.6",
-    "@babel/plugin-transform-runtime": "^7.29.0",
-    "@babel/preset-env": "^7.29.2",
-    "@babel/preset-typescript": "^7.28.5",
-    "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^24.12.2",
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/cli": "^8.0.4",
+    "@babel/core": "^8.0.1",
+    "@babel/node": "^8.0.1",
+    "@babel/plugin-transform-class-properties": "^8.0.1",
+    "@babel/plugin-transform-runtime": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-typescript": "^8.0.1",
+    "@tsconfig/node24": "^24.0.5",
+    "@types/node": "^24.13.3",
     "husky": "^9.1.7",
-    "lint-staged": "^16.4.0",
-    "prettier": "3.8.3",
-    "typescript": "^6.0.3"
+    "lint-staged": "^17.4.1",
+    "prettier": "3.9.6",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.29.2",
+    "@babel/runtime": "^8.0.0",
     "dotenv": "^17.4.2",
     "source-map-support": "^0.5.21"
+  },
+  "patchedDependencies": {
+    "@babel/node@8.0.1": "patches/@babel/node@8.0.1.patch"
   }
 }
